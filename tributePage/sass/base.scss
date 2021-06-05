@@ -1,0 +1,67 @@
+// COLOR VARIABLES
+
+$color-white: #F8F9FA;
+
+$color-grey-light-1: #DEE2E6;
+$color-grey-light-2: #CED4DA;
+
+$color-grey-dark-1: #6C757D;
+$color-grey-dark-2: #495057;
+$color-grey-dark-3: #343A40;
+
+$color-dark: #212529;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+// FONTS VARIABLES
+
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+$font-lato: "Lato", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+
+$bp-huge: 75em;          // 1200px - min-width;
+$bp-largest: 75em;       // 1200px;
+$bp-large: 73.5em;       // 1176px;
+$bp-large-2: 71.0625em;  // 1137px;
+$bp-large-3: 60.1875em;  // 963px;
+$bp-medium: 51.625em;    // 826px;
+$bp-medium-2: 45.9375em;    // 735px;
+$bp-small: 37.5em;       // 600px;
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px / 16px => 1rem == 10px;
+}
+
+
+body {
+    position: relative;
+    font-family: $font-lato;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        to right bottom,
+        $color-grey-dark-1,
+        $color-grey-dark-1);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
