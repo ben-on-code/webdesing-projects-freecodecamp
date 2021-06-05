@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: hsl(0,0%,93%);
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: hsl(0,0%,93%);
+}
+
+header img{
+    height: 50px;
+    padding-top: .5rem;
+}
+
+#nav-bar{
+    margin-right: 1rem;
+}
+
+#nav-bar .nav-link{
+    padding: 1.3rem 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#nav-bar .nav-link:hover{
+    background-color: black;
+    color: white;
+}
+
+.body-wrapper{
+    position: absolute;
+    width: 100vw;
+    top: 5rem;
+    z-index: 0;
+    /* left: 50%; */
+}
+
+
+.h2{
+    display: block;
+    position: relative;
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+#form #email{
+    width: 15rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: .3rem;
+}
+
+#form #submit{
+    width: 10rem;
+    margin: 0 auto;
+    padding: .3rem .4rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: hsl(47,89%,50%);
+    font-weight: bold;
+}
+
+#form #submit:hover{
+    cursor: pointer;
+}
+
+.features-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 35rem;
+    min-height: 20rem;
+}
+
+.features-icons{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+}
+
+.features-icons i{
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.features-spec{
+    min-height: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+iframe {
+    display: flex;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+    
+}
+
+.price{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 310px;
+    margin: 0 1.5rem;
+}
+
+.title-price {
+    display: block;
+    text-align: center;
+    padding: .5rem 0;
+    background-color: gainsboro;
+}
+
+.price-number{
+    text-align: center;
+    margin-top: 1rem;
+    padding: .5rem 0;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list .item{
+    padding: .5rem 0;
+}
+
+.price button{
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    background-color:  hsl(47,89%,50%);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: .5rem 1.5rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.price button:hover{
+    cursor: pointer;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: hsl(0,0%,86%);
+    width: 57%;
+
+    height: 5rem;
+    border-radius: 2px;
+}
+
+.f-link{
+    text-decoration: none;
+    color: black;
+    padding: 0 .4rem;
+    margin: 0 .1rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 870px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .body-wrapper{
+        top: 6rem;
+    }
+
+    .footer{
+        width: 80%;
+    }
+  }
