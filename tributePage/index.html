@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-
-    <title>Manu Ginobili</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./tributePage-new/css/style.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <title>Manu Ginobili</title>
 </head>
 <body>
-    <div id="main" class="container">
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">Emanuel David Ginobili</h1>
+      <h2 class="header__subtitle">El 20 de los Spurs y el 5 de la Argentina</h2>
+    </header>
+    <div class="carousel">
+      <input type="checkbox" class="carousel__ui">
+      <div class="slide" slide="5" annot="Campeón olímpico. Atenas 2004">
+        <img src="./tributePage-new/img/olimpico.jpeg" alt="Slide 5">
+      </div>
 
-        <h1 id="title" class="title">Emanuel David Ginobili</h1>
-        <p class="title__sub">El 20 de los Spurs y el 5 de la Argentina</p>
+      <input type="checkbox" class="carousel__ui">
+      <div class="slide" slide="4" annot="Histórica victoria ante los Estados Unidos.">
+        <img src="./tributePage-new/img/campeon.jpeg" alt="Slide 4">
+      </div>
 
-        <div id="img-div" class="image">
+      <input type="checkbox" class="carousel__ui">
+      <div class="slide" slide="3" annot="Final inolvidable ante el Miami Heat.">
+        <img src="./tributePage-new/img/manu-2014.jpeg" alt="Slide 3">
+      </div>
 
-            <img id="image" class="image__photo" src="./img/manu-campeon.jpeg" alt="Manu Ginobili">
-            <p id="img-caption" class="image__text">
-                Celebrating with Tim Duncan and Tony Parker minutes after winning their fourth NBA title.
-            </p>
-        </div>
-        
-        <section id="tribute-info" class="section">
+      <input type="checkbox" class="carousel__ui">
+      <div class="slide" slide="2" annot="Campeones de la NBA con Fabricio Oberto.">
+        <img src="./tributePage-new/img/manu-oberto.jpeg" alt="Slide 2">
+      </div>
 
-            <h3 class="section__title">Career history and awards..</h3>
+      <input type="checkbox" class="carousel__ui">
 
-                <ul class="section__list">
-                    <li class="section__list--item"><b>1995</b> - Professional debut for the Andino Sport Club, Argentina.</li>
-                    <li class="section__list--item"><b>1996</b> - Estudiantes de Bahía Blanca, Argentina.</li>
-                    <li class="section__list--item"><b>1998</b> - First internacional experience in Reggio Calabria, Italy.</li>
-                    <li class="section__list--item"><b>2000</b> - Kinder Bologna, Italy</li>
-                    <li class="section__list--item"><b>2001</b> - Triple Crown winner. Italian League, Italian Cup and EuroLeague.</li>
-                    <li class="section__list--item"><b>2001</b> - Italian League MVP.</li>
-                    <li class="section__list--item"><b>2001</b> - EuroLeague Final Four MVP.</li>
-                    <li class="section__list--item"><b>2002</b> - Italian League MVP.</li>
-                    <li class="section__list--item"><b>2002</b> - Italian Cup Champion.</li>
-                    <li class="section__list--item"><b>2002</b> - Italian Cup MVP.</li>
-                    <li class="section__list--item"><b>2002</b> - NBA debut with the San Antonio Spurs.</li>
-                    <li class="section__list--item"><b>2003</b> - NBA World Champion</li>
-                    <li class="section__list--item"><b>2004</b> - Gold medal in Atenas with the National Team</li>
-                    <li class="section__list--item"><b>2005</b> - NBA All Stars</li>
-                    <li class="section__list--item"><b>2005</b> - NBA World Champion</li>
-                    <li class="section__list--item"><b>2007</b> - NBA World Champion</li>
-                    <li class="section__list--item"><b>2011</b> - NBA All Stars</li>
-                    <li class="section__list--item"><b>2014</b> - NBA World Champion</li>
-                </ul>
-            </section>
-            <p class="section__text">Para conocer más respecto a la vida de Emanuel Ginobili hace click <a href="#" target="_blank" id="tribute-link" class="section__text--link">aquí.</a></p>
+      <div class="slide" slide="1" annot="Festejo clásico.">
+        <img src="./tributePage-new/img/manu-festejo.jpeg" alt="Slide 1">
+      </div>
+
+      <div class="counter" count="5"> / 5</div>
     </div>
+
+    <section class="history">
+      <div class="history__header">
+        <h1 class="history__header--title">Career & Awards</h1>
+        <img src="./tributePage-new/img/cabb.png" alt="Logo CABB" class="history__header--img history__header--img-1">
+        <img src="./tributePage-new/img/spurs.png" alt="Logo Spurs" class="history__header--img history__header--img-2">
+      </div>
+      <div class="history__list">
+        <ul class="history__list-1">
+          <li class="history__list-1--item"><b>1995</b> - Professional debut for the Andino Sport Club, Argentina.</li>
+          <li class="history__list-1--item"><b>1996</b> - Estudiantes de Bahía Blanca, Argentina.</li>
+          <li class="history__list-1--item"><b>1998</b> - First internacional experience in Reggio Calabria, Italy.</li>
+          <li class="history__list-1--item"><b>2000</b> - Kinder Bologna, Italy</li>
+          <li class="history__list-1--item"><b>2001</b> - Triple Crown winner. Italian League, Italian Cup and
+            EuroLeague.</li>
+          <li class="history__list-1--item"><b>2001</b> - Italian League MVP.</li>
+          <li class="history__list-1--item"><b>2001</b> - EuroLeague Final Four MVP.</li>
+          <li class="history__list-1--item"><b>2002</b> - Italian League MVP.</li>
+          <li class="history__list-1--item"><b>2002</b> - Italian Cup Champion.</li>
+        </ul>
+        <ul class="history__list-2">
+          <li class="history__list-2--item"><b>2002</b> - Italian Cup MVP.</li>
+          <li class="history__list-2--item"><b>2002</b> - NBA debut with the San Antonio Spurs.</li>
+          <li class="history__list-2--item"><b>2003</b> - NBA World Champion</li>
+          <li class="history__list-2--item"><b>2004</b> - Gold medal in Atenas with the National Team</li>
+          <li class="history__list-2--item"><b>2005</b> - NBA All Stars</li>
+          <li class="history__list-2--item"><b>2005</b> - NBA World Champion</li>
+          <li class="history__list-2--item"><b>2007</b> - NBA World Champion</li>
+          <li class="history__list-2--item"><b>2011</b> - NBA All Stars</li>
+          <li class="history__list-2--item"><b>2014</b> - NBA World Champion</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="video">
+      <h3 class="video__h3">Que dicen otras leyendas de Manu</h3>
+      <iframe class="iframe" width="600" height="400" src="https://www.youtube.com/embed/n7BP55qjRMk"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="p">
+      <p class="p__text">Puedes conocer más sobre Manu Ginobili</p><a href="#" target="_blank" id="tribute-link"
+        class="p__text-link">aquí.</a>
+    </div>
+  </div>
 </body>
+
 </html>
